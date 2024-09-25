@@ -1,0 +1,260 @@
+.body-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.top-bar {
+  background-color: #15297c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.top-bar img {
+  align-items: center;
+  display: flex;
+  height: 35px;
+}
+
+.top-bar {
+  padding: 4px 20px;
+}
+
+.top-bar .perfil {
+  position: fixed;
+  top: 0;
+  right: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 1em;
+  font-weight: 1em;
+  margin-top: 9px;
+  gap: 4px;
+}
+
+.top-bar .perfil .loginh {
+  margin-right: 10px;
+}
+
+.main-header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.main-header .brand h1 {
+  display: flex;
+  align-items: center;
+  color: #29ccba;
+  font-size: 3em;
+  font-weight: 200;
+  letter-spacing: 10px;
+}
+
+.logoMolokai {
+  flex: 1;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.uni-logo img {
+  height: 35px;
+}
+
+.perfil a {
+  color: white;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+.perfil .separator {
+  margin: 0 5px;
+  height: 22px;
+}
+
+.perfil .user-icon {
+  margin: 0 5px;
+  height: 25px;
+}
+
+.logoMolokai img {
+  max-width: 140px;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a {
+  color: #f8646c;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-left: 20px;
+  text-decoration: none;
+  align-items: center;
+  cursor: pointer;
+}
+.menu a:hover {
+  color: #f5121e;
+}
+
+.menu .pedidos {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 5px 13px;
+  border-radius: 5px;
+  font-size: 1.3em; /* Aumenta el tamaño de la fuente del botón MENU */
+}
+
+.menu .pedidos a:hover {
+  color: #8e3535;
+}
+.menu a .shopcart {
+  margin-top: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #f8646c;
+  color: white;
+  margin-right: 10px;
+}
+.menu a .shopcart:hover {
+  color: #cb3939;
+}
+.btn {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #f8646c;
+  display: none;
+  font-size: 1.8rem;
+}
+
+.admin {
+  margin-left: -90px !important; 
+}
+
+.perfil-link {
+  margin-left: -90px !important; 
+}
+
+@media only screen and (max-width: 1024px) {
+  .btn {
+    display: contents;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    background-color: #29ccba;
+    transition: 1s;
+    transform: translateX(180vh);
+  }
+
+  .close-button {
+    color: #ffffff;
+  }
+  .menu a {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .main-header .brand h1 {
+    visibility: visible;
+  }
+
+  .responsive_nav {
+    transform: none;
+  }
+
+  nav .close-icon {
+    display: contents ;
+    display: flex;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: white;
+  }
+  .menu .pedidos {
+    background: transparent;
+  }
+  .menu a .shopcart {
+    background: transparent;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-header .brand h1 {
+    font-size: 40px;
+  }
+
+  .top-bar {
+    padding: 4px 20px;
+  }
+
+  .logoMolokai img {
+    max-width: 115px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main-header .brand h1 {
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+  .logoMolokai img {
+    max-width: 90px;
+  }
+
+  .perfil a {
+    margin-left: 0px;
+    font-size: 0.8em;
+  }
+
+  .perfil .separator {
+    margin: 0 1px;
+    height: 17px;
+  }
+
+  .perfil .user-icon {
+    margin: 0 1px;
+    height: 19px;
+  }
+
+  .uni-logo img {
+    height: 30px;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+    

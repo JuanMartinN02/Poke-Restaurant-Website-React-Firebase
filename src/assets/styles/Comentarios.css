@@ -1,0 +1,118 @@
+/*----------Logo Molokai----------*/
+.molo{
+    margin-top: -5%;
+    position: relative;
+    top: -75px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*----------Caja de comentarios---------*/
+  .cuadrado {
+    width: 60%;
+    height: 430px;
+    background-color: white;
+    border-radius: 50px;
+    border: 2px solid #29CCBA; 
+    padding: 40px 0px 0px 40px;
+  }
+  
+  .exp{
+    font-size: 40px;
+  }
+  
+  .input {
+    width: 90%; 
+    height: 200px; 
+    font-size: 16px; 
+    background-color: #EFEFEF; 
+    color: black;
+    border: 2px solid #29CCBA; 
+    padding: 10px; 
+    border-radius: 10px;
+    text-align: top;
+    overflow-wrap: break-word;
+  }
+  
+  .botonComentar {
+    position: relative;
+    top: 40px;
+    width: 90%;
+    height: 50px;
+    background-color: #F8646C;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer; /* Agregar el cursor pointer para indicar que es interactivo */
+    transition: transform 0.3s, opacity 0.3s; /* Agregar transición a las propiedades que quieres animar */
+  }
+  
+  .botonComentar:active {
+    transform: scale(0.99); /* Cambiar la escala al hacer clic */
+    opacity: 0.8; /* Cambiar la opacidad al hacer clic */
+  }
+  
+  .enviarComentario {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .menu-boton {
+    position: relative;
+    top: 50px;
+    height: 82px;
+    padding: 17px 252px 25px 250px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    background-color: rgba(41, 204, 186, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s, transform 0.3s;
+    border: #29CCBA;
+    cursor: pointer;
+  }
+  
+  .menu-boton:hover {
+    background-color: rgba(31, 184, 166, 1);
+  }
+  
+  .menu-boton:active {
+    transform: translateY(2px); /* Efecto de presionar el botón */
+  }
+  
+  .menu-boton {
+    margin-left: 20%;
+    margin-bottom: 10%;
+    width: 60%;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 40px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  
+  @media (max-width: 975px){
+  
+    .cuadrado {
+      height: 500px;
+    }
+  
+  }
+  
+  @media (max-width: 1350px){
+    .menu-boton {
+      top: 50px;
+      height: 150px;
+    }
+  }

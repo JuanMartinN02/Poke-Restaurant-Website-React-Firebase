@@ -1,0 +1,263 @@
+.adminh-wrap {
+  display: flex;
+  background-color: #29ccba;
+  width: 80%;
+  height: 80%;
+  box-sizing: border-box;
+  margin-top: 180px;
+  border-radius: 50px;
+}
+
+.listapedidos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 10px;
+  width: 30%;
+  height: 480px;
+  background-color: #f5f5f5;
+  border-radius: 50px 0 0 50px;
+}
+
+.pedidotitulo {
+  display: flex;
+  align-items: center;
+  color: #29ccba;
+  font-size: 1.8em;
+  font-weight: 200;
+  letter-spacing: 10px;
+  padding: 0px 60px;
+  border-bottom: 2px solid #29ccba;
+}
+.separador {
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid white;
+}
+.detalletitulo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.8em;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.detallepedido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 70%;
+  height: 100%;
+  
+  border-radius: 0 50px 50px 0;
+}
+.close-icon-admin {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #f8646c;
+  display: none;
+  font-size: 1.8rem;
+}
+
+.ordenes {
+  position: relative;
+  z-index: 10;
+  max-height: 370px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #29ccba #f5f5f5;
+}
+
+.ordenes::-webkit-scrollbar {
+  width: 10px;
+}
+
+.busqueda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+  width: 100%;
+  height: 30px;
+  background-color: #f5f5f5;
+  border-radius: 50px;
+  border-color: #29ccba;
+  text-align: center;
+  border: 1px solid #29ccba;
+  color: grey;
+}
+
+.lupa-icon-admin {
+  display: none;
+}
+
+.detalles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+  height: 420px;
+  border-radius: 50px;
+}
+.dato {
+  display: block;
+  align-items: center;
+  color: white;
+  padding: 0px 32px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.titulodato {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.4em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 0px 32px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.infodato {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  align-items: center;
+  padding: 3px 0px;
+  text-align: center;
+  margin-bottom: 2px;
+  background-color: #f8646c;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.tuOrden {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+  background-color: #f5f5f5;
+  color: #f8646c;
+  border-radius: 50px;
+}
+.orden {
+  position: relative;
+  z-index: 10;
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #29ccba #f5f5f5;
+}
+.tuOrden::-webkit-scrollbar {
+  width: 10px;
+}
+
+@media only screen and (max-width: 1244px) {
+@media only screen and (max-width: 550px){
+  .adminh-wrap{
+    margin-top: 200px;
+  }
+  .tuOrden{
+    border-radius: 20px;
+  }
+}
+  .dato {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    width: 100px;
+    padding: 2px;
+  }
+  .orden {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lupa-icon-admin {
+    background-color: #29ccba;
+    display: contents;
+    border: none;
+    color: white;
+    font-size: 0.8em;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 400px;
+
+    display: inline-block;
+  }
+  .busqueda {
+    margin: 5px 0 5px 0;
+  }
+
+  .ordenes {
+    position: relative;
+    z-index: 10;
+    max-height: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin; 
+    scrollbar-color: #888 #f1f1f1; 
+  }
+
+  .listapedidos {
+    width: 10%;
+    background-color: #29ccba;
+  }
+  .textotitulo {
+    display: none;
+  }
+  .close-icon-admin {
+    display: contents;
+  }
+  .pedidotitulo {
+    border: none;
+  }
+  .lupa-icon-admin {
+    background-color: #f5f5f5;
+    color: #29ccba;
+  }
+  .pedidoshistorial {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #f5f5f5;
+    transition: 1s;
+    transform: translateX(-180vh);
+    z-index: 1000;
+  }
+
+  .responsive_bus {
+    transform: none;
+  }
+  .close-icon-admin {
+    display: flex;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    margin-bottom: 100px;
+  }
+} 

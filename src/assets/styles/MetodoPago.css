@@ -1,0 +1,90 @@
+  /*-----------------Metodo de pago-----------------*/
+  .metodoPago {
+
+    padding: 20px 0px 0px 30px;
+    border: 2px solid rgba(41, 204, 186, 1);
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+    .descuento,
+    .pagar{
+    font-size: 30px;
+    margin-bottom: 2%;
+  }
+
+  .descuento{
+    color: #F8646C;
+  }
+  
+  .seleccionPago2,
+  .seleccionPago1 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(41, 204, 186, 1);
+    border-radius: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .clicked {
+    background-color: rgba(41, 204, 186, 1);
+  }
+
+  .metodos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Inputs */
+  .nroTarjeta,
+  .nombreTarjeta {
+    background-color: transparent; 
+    color: #333; 
+    border: 1px solid #ccc; 
+    padding: 5px;
+    width: 80%;
+    color: transparent;
+    color: #999; 
+    margin-bottom: 5%;
+  }
+
+  .codigo,
+  .fechaTarjeta,
+  .ccvTarjeta {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 35%;
+    margin-right: 10px; 
+  }
+  
+  .fechaTarjeta::placeholder,
+  .ccvTarjeta::placeholder {
+    color: #999;
+  }
+  
+  .fechaTarjeta:focus::placeholder,
+  .ccvTarjeta:focus::placeholder {
+    color: transparent;
+  }
+  
+  .contenedorInputs {
+    display: flex; 
+  }
+
+  /*Otros*/
+  .metodoPago {
+    margin-left: 100px;
+    width: 800px;
+  }
+
+@media (max-width: 1200px){
+  .metodoPago {
+    margin-left: 0px;
+    width: 100%;
+  }
+}

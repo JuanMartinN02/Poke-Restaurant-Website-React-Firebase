@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.plato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 10px;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #f3f3f3;
+  border: 2px solid #f8646c;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.fotoplato {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.plato-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.nomplato {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #f8646c;
+  font-weight: 400;
+}
+.ing-precio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+  }
+.precioplato {
+  width: 30%;
+  font-size: 12px;
+  color: white;
+  background-color: #f8646c;
+  text-align: center;
+  
+  border-radius: 10px;
+  justify-content: center;
+}
+.ingplato {
+  margin: 10px 0;
+  flex: 1;
+  color: #757575;
+  font-size: 12px;
+}
+
+.cantplato {
+  margin: 5px 0;
+  font-size: 12px;
+  color: #f8646c;
+  background-color: white;
+  border: 1px solid #f8646c;
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+
+  
+
+@media only screen and (max-width: 900px) {
+  .fotoplato{
+    display: none;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .plato{
+    border-radius: 20px ;
+  }
+  .nomplato{
+    font-size: 12px;
+  }
+  .precioplato{
+    
+    align-self: center;
+  }
+}

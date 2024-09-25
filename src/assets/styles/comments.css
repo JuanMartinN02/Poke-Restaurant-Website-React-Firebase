@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+.p {
+  position: relative;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.barraC {
+  background-color: #00d1b2;
+  padding: 8px 0;
+  width: 104%;
+  margin-top: -10%;
+}
+
+.comentariosDestacados {
+  color: #ffffff;
+  line-height: 50px;
+  font-size: 33px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+}
+
+.comentariosContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.comentario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.perfilf {
+  width: 60px;
+  border-radius: 50%;
+  background-color: #f8646c;
+}
+
+.nombre {
+  color: black;
+  font-size: 25px;
+  margin-top: 0.5rem;
+}
+
+.star {
+  font-size: 25px;
+  width: 150px;
+  margin-top: 0.5rem;
+}
+
+.cajadecomentarios {
+  width: 400px;
+  height: 100px;
+  border: 1px solid rgba(63, 132, 124, 1);
+  box-sizing: border-box;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1)
+    ),
+    url(https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/xbko98jba5-607%3A1131?alt=media&token=7bb11a8e-7978-4f34-8612-34e7326bb064);
+  border-radius: 10px;
+  margin-top: 0.5rem;
+}
+
+.comentarioTexto {
+  padding: 10px;
+  color: rgb(80, 80, 80);
+  font-size: 15px;
+  line-height: 15px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 1685px;
+  margin: 0 auto;
+  top: 60px;
+}
+
+.imagenOrdenaYa {
+  width: 104%;
+  display: block;
+  height: 300px;
+}
+
+.contornoOrdenaYa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(248, 100, 108, 1);
+  border-radius: 20px;
+  width: 250px;
+  height: 65px;
+  box-sizing: border-box;
+}
+
+.ordenaYa {
+  color: white;
+  font-size: 23px;
+  font-family: Poppins, sans-serif;
+  cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .imagenOrdenaYa {
+    width: 106%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .imagenOrdenaYa {
+    width: 115.1%;
+  }
+}
+
+
+
+
+
+@media (max-width: 1500px) {
+  .comentariosContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) {
+  .imagenOrdenaYa {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .comentariosDestacados {
+    font-size: 28px;
+  }
+
+  .imagenOrdenaYa {
+    height: 150px;
+  }
+
+  .contornoOrdenaYa {
+    width: 150px;
+    height: 55px;
+  }
+
+  .ordenaYa {
+    font-size: 18px;
+  }
+
+  .barraC {
+    width: 116%;
+
+  }
+}

@@ -1,0 +1,73 @@
+/*-----------------Caja-----------------*/
+
+.finalizadoCuadro {
+    height: 250px;
+    padding: 0px 0px 0px 30px;
+    border: 2px solid rgba(41, 204, 186, 1);
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .pagoExitoso{
+    margin-left: 300px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color:#F8646C
+  }
+  
+  /*-----------------Bóton de confirmar-----------------*/
+  .comentar-boton {
+    position: relative;
+    top: 100px;
+    height: 82px;
+    padding: 17px 252px 25px 250px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    background-color: #F8646C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s, transform 0.3s;
+    border: #29CCBA;
+    cursor: pointer;
+  }
+  
+  .comentar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 40px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  .comentar-boton:hover {
+    background-color: #E25B63;
+  }
+  .comentar-boton:active {
+    transform: translateY(2px); /* Efecto de presionar el botón */
+  }
+  
+  .comentar-boton,
+  .finalizadoCuadro {
+    margin-bottom: 5%;
+    margin-left: 100px;
+    width: 800px;
+  }
+  
+  @media (max-width: 1200px){
+    .finalizadoCuadro {
+      margin-left: 0px;
+      width: 100%;
+    }
+  
+    .comentar-boton {
+      position: relative;
+      top: 60px;
+      width: 40%;
+      margin-left: 30%;
+    }
+  
+  } 

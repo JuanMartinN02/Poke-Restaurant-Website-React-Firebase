@@ -1,0 +1,74 @@
+/*-----------------Hora de delivery-----------------*/
+
+.confirmarCuadro2,
+.confirmarCuadro1 {
+  height: 200px;
+  padding: 0px 0px 0px 30px;
+  border: 2px solid rgba(41, 204, 186, 1);
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.confirmarCuadro2 {
+  margin-top: 2%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-Cod-c {
+  font-size: 12px;
+  width: 180px;
+  height: 40px;
+  padding: 0px 0px 0px 10px;
+  border: 1px solid rgba(41, 204, 186, 1);
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+  margin-right: 10px;
+}
+
+.boton-Cod-c {
+  width: 100px;
+  height: auto;
+  border: none;
+  padding: 5px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  background-color: rgba(41, 204, 186, 1);
+  color: white;
+  font-size: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.boton-Cod-c:hover {
+  background-color: rgba(31, 184, 166, 1);
+}
+
+.input-wrapper-c {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.informacion {
+  position: relative;
+  font-size: 25px;
+}
+
+/*Seteo de ubicación*/
+.confirmarCuadro2,
+.confirmarCuadro1 {
+  margin-left: 100px;
+  width: 800px;
+}
+
+@media (max-width: 1200px) {
+  .confirmarCuadro2,
+  .confirmarCuadro1 {
+    margin-left: 0px;
+    width: 100%;
+  }
+}

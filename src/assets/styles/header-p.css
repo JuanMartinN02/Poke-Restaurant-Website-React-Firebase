@@ -1,0 +1,142 @@
+.body-header-p{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  
+    
+}
+.top-bar-p{
+    background-color: #15297c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+.top-bar-p img{
+  align-items: center;
+  display: flex;
+  height: 35px;
+}
+  
+  .main-header-p{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  .logoMolokai-p{
+    flex: 1;
+    text-align: center;
+    position: absolute; 
+    top: 20px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    
+    }
+  
+    .logoMolokai-p img{
+      max-width: 140px;
+    }
+    .menu-p{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 305px;
+    }
+    
+    .menu-p a{
+      color: #F8646C;
+      font-size: 1.5em;
+      font-weight: 600;
+      margin-left: 20px;
+      text-decoration: none;
+      align-items: center;
+      cursor: pointer;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+    }
+   
+    .menu-p a:hover{
+      color: #f5121e;
+    }
+
+      .close-icon-p{
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #F8646C;
+        display: none;
+        font-size: 1.8rem;
+      }
+      .menu-icon-p{
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #F8646C;
+        display: none;
+        font-size: 1.8rem;
+      }
+
+    
+    @media only screen and (max-width: 1244px){
+      button .menu-icon-p{
+        display: contents ;
+      }
+      button .close-icon-p{
+        display: contents ;
+      }
+      .menu-icon-p{
+        margin-left: auto;
+        display: flex;
+
+      }
+      
+      .menu-p{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: #29CCBA;
+        transition: 1s;
+        transform: translateX(180vh);
+        
+      }
+      .menu-p a{
+        font-size: 1.5rem;
+        color: white;
+      }
+    
+      .responsive_nav{
+        transform: none;
+
+      }
+      
+        nav .close-icon-p{
+          display: flex;
+          position: absolute;
+          top: 2rem;
+          right: 2rem;
+          color: white;
+        }
+      }

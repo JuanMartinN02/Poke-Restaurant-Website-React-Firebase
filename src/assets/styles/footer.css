@@ -1,0 +1,318 @@
+.barraF {
+  background-color: #3f4e91;
+  justify-content: space-between;
+  width: 100%;
+  height: 320px;
+}
+
+.logoM {
+  position: relative;
+  top: 150px;
+  width: 100px;
+  height: 100px;
+  margin-top: -3%;
+  margin-left: 5%;
+}
+
+.contactoImg {
+  position: relative;
+  top: 50px;
+  width: 60px;
+  height: 60px;
+  margin-top: -20%;
+  margin-left: 15%;
+}
+
+.contactoTexto {
+  position: relative;
+  top: -1px;
+  font-size: 20px;
+  color: white;
+  top: -65px;
+  margin-top: 1.5%;
+  margin-left: 20%;
+  transform: translate(-0%, 150%);
+}
+
+.info {
+  position: relative;
+  top: 50px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20%;
+  margin-left: 16%;
+}
+
+.contactos {
+  font-size: 15px;
+  color: white;
+  top: -50px;
+  margin-top: -1.5%;
+  margin-left: 20%;
+  height: 60px;
+  transform: translate(-0%, 50%);
+}
+
+.tlf {
+  position: relative;
+  font-size: 15px;
+  color: white;
+  top: 80px;
+  margin-top: -4%;
+  margin-left: 20%;
+  height: 20px;
+  transform: translate(-0%, 330%);
+}
+
+.siguenos {
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  width: 200px;
+  margin-left: 50%;
+  margin-top: -5%;
+  transform: translate(-35%, 100%);
+}
+
+.redesSociales {
+  position: relative;
+  top: 20px;
+  margin-left: 24%;
+  transform: scale(0.5);
+}
+
+.facebook,
+.twitter,
+.instagram,
+.linkedin {
+  margin-right: 40px;
+}
+
+.copy {
+  position: relative;
+  color: white;
+  font-size: 25px;
+  margin-left: -1%;
+  top: 100px;
+}
+
+.pin {
+  position: relative;
+  margin-top: -4%;
+  margin-left: 63%;
+  width: 60px;
+  height: 60px;
+  top: -140px;
+}
+
+.acercade {
+  color: white;
+  font-size: 20px;
+  margin-left: 66%;
+  margin-top: -11.9%;
+  transform: translate(0%, 200%);
+}
+
+.creador {
+  color: white;
+  font-size: 15px;
+  margin-left: 64%;
+  margin-top: 4%;
+}
+
+.unimet {
+  position: relative;
+  margin-left: 85%;
+  margin-top: -6%;
+  top: 0px;
+}
+
+.line-1 {
+  position: relative;
+  width: 394px;
+  height: 4px;
+  border: 4px solid rgba(141, 128, 128, 1);
+  top: 10px;
+  margin-left: 15%;
+}
+
+.line-2 {
+  position: relative;
+  width: 394px;
+  height: 4px;
+  border: 4px solid rgba(141, 128, 128, 1);
+  top: -0px;
+  margin-left: 60%;
+}
+
+@media (max-width: 1680px) {
+  .contactos,
+  .contactoTexto,
+  .contactoImg,
+  .pin,
+  .line-1,
+  .line-2,
+  .acercade,
+  .creador,
+  .info {
+    display: none;
+  }
+
+  .barraF {
+    width: 100%;
+    height: 200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .unimet {
+    position: relative;
+    margin-left: 85%;
+    margin-top: -5%;
+    top: 0px;
+  }
+
+  .logoM {
+    position: relative;
+    top: 120px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  .siguenos {
+    font-size: 20px;
+    margin-left: 10%;
+    margin-top: -6%;
+  }
+
+  .redesSociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: -4%;
+  }
+
+  .redesSociales img {
+    margin: 0 10px;
+  }
+
+  .copy {
+    display: none;
+  }
+}
+
+@media (max-width: 1487px) {
+  .flex {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1319px) {
+  .flex {
+    margin-top: 50px;
+  }
+
+  .logoM {
+    width: 80px;
+    height: 80px;
+  }
+
+  .unimet {
+    top: -20px;
+    height: 70px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 954px) {
+  .logoM {
+    width: 75px;
+    height: 75px;
+  }
+
+  .unimet {
+    top: -20px;
+    height: 70px;
+    height: 60px;
+    margin-left: 80%;
+  }
+
+  .siguenos {
+    font-size: 20px;
+    margin-left: 20%;
+    margin-top: -6%;
+  }
+
+  .facebook,
+  .twitter,
+  .instagram,
+  .linkedin {
+    height: 70px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 954px) {
+  .logoM {
+    width: 65px;
+    height: 65px;
+  }
+
+  .unimet {
+    top: -20px;
+    height: 60px;
+    height: 50px;
+    margin-left: 80%;
+  }
+
+  .siguenos {
+    font-size: 15px;
+    margin-left: 20%;
+    margin-top: -6%;
+  }
+
+  .facebook,
+  .twitter,
+  .instagram,
+  .linkedin {
+    height: 60px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 567px) {
+  .logoM {
+    width: 55px;
+    height: 55px;
+  }
+
+  .unimet {
+    top: -20px;
+    height: 50px;
+    height: 40px;
+    margin-left: 75%;
+  }
+
+  .siguenos {
+    font-size: 13px;
+    margin-left: 57%;
+    margin-top: -5%;
+  }
+
+  .facebook,
+  .twitter,
+  .instagram,
+  .linkedin {
+    height: 50px;
+    height: 40px;
+  }
+}

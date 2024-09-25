@@ -1,0 +1,82 @@
+.actBorder{
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%;
+    margin: 10px;
+    background-color: #29CCBA;
+    justify-content: space-between;
+}
+.actCod{
+    
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    text-shadow: 1px 1px 1px #000;
+}
+.desacbutton{
+    background-color: #F8646C;
+    color: white;
+    font-size: 0.6em;
+    border-radius: 20px;
+    padding: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.desacbutton:hover{
+    background-color: #CB3939;
+}
+
+.desBorder{
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%;
+    margin: 10px;
+    background-color: #F8646C;
+    justify-content: space-between;
+}
+.desCod{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    text-shadow: 1px 1px 1px #000;
+}
+.actbutton{
+    background-color: #29CCBA;
+    color: white;
+    font-size: 0.6em;
+    border-radius: 20px;
+    padding: 3px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.actbutton:hover{
+    background-color: #1E9D95;
+}
+@media only screen and (max-width: 600px) {
+    .actBorder{
+        width: 90%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+   
+    .desBorder{
+        width: 90%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

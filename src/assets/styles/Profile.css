@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodyProfile {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #EFEFEF;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    padding-top: 60px; 
+}
+
+.User_Profile {
+    position: relative;
+    margin-top: 10vh;   
+    margin-right: 20%;   
+    right: 20px;
+}
+
+.Img_user_container {
+    width: 70vh;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.Img_user {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.Img_change {
+    position: absolute;
+    max-width: 20vh;
+    left: 62%;
+    top: 69%;
+    height: auto;
+    background-color: white;
+    border-radius: 32px;
+}
+
+.container_user_options {
+    margin-top: 10vh;
+    margin-right: 5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    position: relative;
+    max-width: 40vh;
+    height: auto;
+}
+
+.loading_screen_profile {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #EFEFEF;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    padding-top: 60px;
+    color: #29CCBA;
+    font-size: 5em;
+}
+
+.item_profile {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: left;
+    border-radius: 8px;
+    border: 2px solid #29CCBA;
+    font-size: 1.6vw;
+}
+
+.titulo_profile {
+    color: #29CCBA;
+    font-size: 2.3vw; 
+    text-decoration: underline;
+    font-weight: 200;
+}
+
+.profile_save_button_responsive {
+    color: #000000;
+    background-color: #ff6b6b;
+    border: 2px solid #ff6b6b;
+    color: #ffffff;
+    padding: 20px;
+    text-align: left;
+    border-radius: 8px;
+    font-size: 1.6vw;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .profile_save_button_responsive {
+        display: block;
+        font-size: 1.2em;
+        margin-top: 1.2vh;
+    }
+
+    .bodyProfile {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .User_Profile {
+        position: relative;
+        flex: 1;
+        top: 10vh;
+        width: 50%;
+        left: 10vh;
+    }
+
+    .Img_user_container {
+        width: 30vh;
+        height: 30vh;
+        right: 2vh;
+        position: absolute;
+    }
+
+    .Img_user {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .Img_change {
+        position: absolute;
+        max-width: 10vh;
+        left: 65%;
+        height: auto;
+        background-color: white;
+        border-radius: 32px;
+    }
+
+    .container_user_options {
+        margin-top: 45vh; 
+        width: 70%;
+        transform: translateX(10%); 
+        position: relative;
+    }
+
+    .titulo_profile {
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    .item_profile {
+        font-size: 1.2em;
+    }
+}

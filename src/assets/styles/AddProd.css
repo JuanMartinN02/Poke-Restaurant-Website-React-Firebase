@@ -1,0 +1,148 @@
+.popup-overlay-add {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-add {
+  background-color: #F3F3F3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 500px;
+}
+
+.datosProduct {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+
+}
+
+.input-Product {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #29ccba;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+.input-Product.nombre{
+  width: 50%;
+}
+.input-Product.large {
+  height: auto;
+  min-height: 100px;
+  display: block;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.boton-Product,
+.img-Product {
+  background-color: #29ccba;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: 10px;
+
+}
+
+.boton-Product:last-child,
+.img-Product:last-child {
+  margin-right: 0;
+}
+
+.boton-Product:hover,
+.img-Product:hover {
+  background: #1E9D95;
+}
+
+.image-container {
+  position: relative;
+  margin-right: 20px;
+}
+
+.image-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 3px solid #ff6b6b;
+}
+
+.image-container .boton-Product {
+  background-color: #29ccba;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .boton-Product {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .popup-add {
+    width: 90%;
+  }
+
+  .datosProduct {
+    flex-direction: column;
+  }
+
+  .image-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+ 
+
+  .input-Product {
+    font-size: 14px;
+  }
+  .input-Product.nombre{
+    width: 100%;
+  }
+
+  .boton-Product,
+  .img-Product {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+}

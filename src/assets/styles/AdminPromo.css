@@ -1,0 +1,118 @@
+ .adminp-wrap {
+  display: flex;
+  background-color: #29ccba;
+  width: 50%;
+  height: 500px;
+  box-sizing: border-box;
+  margin-top: 180px;
+  border-radius: 50px;
+}
+
+.adminp-wrap-inside {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: space-between;
+  width: 100%;
+  margin: 15px;
+  height: auto;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.activos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 45%;
+  margin: 15px;
+  height: auto;
+  background-color: #F3F3F3;
+  border-radius: 50px;
+  border: 2px solid #29ccba;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.codigos{
+  position: relative;
+  z-index: 10;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin; 
+  scrollbar-color: #29ccba #F3F3F3; 
+}
+.desactivados{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 45%;
+  margin: 15px;
+  height: auto;
+  background-color: #F3F3F3;
+  border-radius: 50px;
+  border: 2px solid #29ccba;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.tituloA{
+  display: flex;
+  align-items: center;
+  color: #29ccba;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 0px 60px;
+  
+}
+
+.lineA{
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #29ccba;
+}
+
+.addCod{
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    width: 60%;
+    margin: 10px;
+    background-color: #29CCBA;  
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+.addCod:hover{
+    background-color: #1E9E8E;
+}
+
+@media only screen and (max-width: 1058px) {
+    .tituloA {
+      font-size: 1.2em;
+      padding: 0px 30px;
+    }
+    .adminp-wrap {
+      width: 100%;
+      
+    }
+    .adminp-wrap-inside {
+      justify-content: center;
+    }
+
+    .activos{
+      margin-right: 10px;
+      width: 40%;
+    }
+    .desactivados{
+      margin-left: 10px;
+      width: 40%;
+    }
+  }
+  

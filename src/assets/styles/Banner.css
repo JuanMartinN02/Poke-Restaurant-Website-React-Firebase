@@ -1,0 +1,234 @@
+/* styles.css */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.imgPoke {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.imgPoke img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Cambiado de center a flex-start */
+  padding-left: 180px; /* Ajusta este padding según sea necesario */
+  background: rgba(27, 27, 27, 0.3);
+}
+
+.title {
+  color: rgb(236, 236, 236);
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 20px; /* Ajusta este margen según sea necesario */
+  text-shadow: 20px 20px 19px rgba(0, 0, 0, 0.5);
+  animation: textAnimation 0.8s ease-in-out forwards;
+}
+
+.text1 {
+  color: rgb(236, 236, 236);
+  margin-bottom: 20px; /* Ajusta este margen según sea necesario */
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  animation: textAnimation 1s ease-in-out forwards;
+}
+
+.text2 {
+  color: rgb(236, 236, 236);
+  margin-top: -150px; /* Ajusta este margen según sea necesario */
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  animation: textAnimation 1.4s ease-in-out forwards;
+}
+
+.order-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px; /* Ajusta el margen según sea necesario */
+  animation: textAnimation 1.2s ease-in-out forwards;
+}
+
+.order-button {
+  background-color: #ff6f61;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.order-button:hover {
+  transform: scale(1.1);
+  background-color: #e65c50;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 20px;
+  left: 49%; /* Centra horizontalmente */
+  animation: textAnimation 1.6s ease-in-out forwards;
+}
+
+.arrow-down img {
+  height: 30px;
+  animation: bounce 2s infinite;
+}
+
+.arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.arrow-left,
+.arrow-right {
+  cursor: pointer;
+}
+
+.arrow-left img,
+.arrow-right img {
+  height: 40px;
+}
+
+@keyframes textAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 1020px) {
+  .banner {
+    margin-top: 80px;
+  }
+
+  .title {
+    font-size: 2.7em;
+  }
+
+  .search-bar {
+    height: 48px;
+  }
+
+  .search-bar input {
+    font-size: 1em;
+  }
+
+  .search-bar button img {
+    height: 25px;
+  }
+
+  .arrow-down img {
+    height: 20px;
+  }
+
+  .arrow-left img,
+  .arrow-right img {
+    height: 25px;
+  }
+
+  .imgPoke img {
+    width: 140%;
+  }
+}
+
+@media (max-width: 795px) {
+  .imgPoke img {
+    width: 151%;
+  }
+}
+
+@media (max-width: 725px) {
+  .title {
+    font-size: 2.4em;
+  }
+
+  .search-bar {
+    height: 40px;
+  }
+
+  .imgPoke img {
+    width: 230%;
+  }
+
+  .text1 {
+    font-size: 1.2em;
+  }
+
+  .text2 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 680px) {
+  .overlay {
+    padding-left: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.9em;
+  }
+
+  .imgPoke img {
+    width: 240%;
+  }
+
+  .order-button {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 459px) {
+  .imgPoke img {
+    width: 292%;
+  }
+}

@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.espacio {
+  margin: 20px 0;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.section.left,
+.section.right {
+  justify-content: center;
+}
+
+.step {
+  height: 40px;
+  margin: 0 10px;
+}
+
+.search-poke-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-poke {
+  display: flex;
+  align-items: center;
+  background-color: #00d1b2;
+  border-radius: 25px;
+  padding: 10px;
+  width: 90%;
+  max-width: 800px;
+  justify-content: space-between;
+}
+
+.cta {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+.arrow-btn {
+  background-color: #00d1b2;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.arrow-btn img {
+  width: 35px;
+  height: 35px;
+}
+
+.leaf-C {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.leafc {
+  position: absolute;
+  top: -250px;
+  left: 0;
+  width: 200px;
+  height: 300px;
+}
+
+@media (max-width: 1164px) {
+
+  .leafc {
+    display: none;
+    
+  }
+}
+
+
+@media (max-width: 950px) {
+  .search-poke {
+    padding: 10px 20px;
+  }
+
+  .step {
+    height: 30px;
+    margin: 0 10px;
+  }
+
+  .cta {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 860px) {
+  .search-poke {
+    padding: 10px 15px;
+  }
+
+  .step {
+    height: 25px;
+  }
+
+  .cta {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 790px) {
+
+  .search-poke {
+    padding: 10px 20px;
+    width: 400px;
+  }
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    height: 35px;
+    margin: 3px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-poke {
+    padding: 10px 30px;
+    width: 350px;
+  }
+
+  .espacio {
+    margin: 0 0;
+  }
+  
+}

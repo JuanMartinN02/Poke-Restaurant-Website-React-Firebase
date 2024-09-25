@@ -1,0 +1,252 @@
+.menuSection {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.he {
+  background-color: #00d1b2;
+  padding: 20px;
+}
+
+.transition {
+  height: 40px;
+}
+
+.leaf-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.leaf {
+  position: absolute;
+  top: -250px;
+  right: 0px;
+  width: 200px;
+  height: 300px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2em;
+  margin: 0;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cards-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.card_f {
+  background: #fff;
+  border: 2.4px solid #00d1b2;
+  border-radius: 20px;
+  margin: 0 15px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.card_f img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.card_f h2 {
+  color: #ff6b6b;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.price {
+  color: #00d1b2;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.ingredientes {
+  color: #504c4c;
+  margin: 5px 0;
+}
+
+.more-icon {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 1.5em;
+  color: #ffffff;
+  background-color: #00d1b2;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.dot {
+  background: #ff6b6b;
+  border: 2px solid #ff6b6b;
+  border-radius: 50%;
+  height: 22px;
+  margin: 0 5px;
+  width: 22px;
+}
+
+.dot:first-child {
+  background: #ff6b6b;
+}
+
+.dot:not(:first-child) {
+  background: #fff;
+}
+
+.view-menu-btn {
+  background-color: #ff6b6b;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+@media (max-width: 1350px) {
+  .leaf {
+    width: 115px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 1316px) {
+  .card_f {
+    margin: 0 15px;
+    padding: 20px;
+    width: 240px;
+  }
+
+  .card_f img {
+    height: 160px;
+    width: 160px;
+  }
+
+  .card_f h2 {
+    font-size: 1.1em;
+    margin: 9px 0;
+  }
+
+  .ingredientes {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 1259px) {
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card_f {
+    width: 240px;
+    margin: 15px;
+  }
+
+  .more-icon {
+    width: 25px;
+    height: 25px;
+    font-size: 1em;
+  }
+
+  .leaf-container {
+    display: none;
+  }
+}
+
+@media (max-width: 1020px) {
+  .card_f {
+    width: 200px;
+  }
+
+  .card_f img {
+    height: 140px;
+    width: 140px;
+  }
+
+  .card_f h2 {
+    font-size: 1em;
+  }
+
+  .ingredientes {
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 795px) {
+  .card_f {
+    width: 200px;
+  }
+
+  .card_f img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .card_f h2 {
+    font-size: 0.9em;
+  }
+
+  .ingredientes {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 725px) {
+  .card_f {
+    width: 160px;
+  }
+
+  .card_f img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .card_f h2 {
+    font-size: 0.8em;
+  }
+
+  .ingredientes {
+    font-size: 0.65em;
+  }
+}
+
+@media (max-width: 480px) {
+  .he {
+    font-size: 0.9em;
+  }
+}

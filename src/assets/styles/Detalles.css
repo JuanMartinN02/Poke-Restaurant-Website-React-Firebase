@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  
+  body {
+    background-color:#F5F4F5;
+  }
+  /*-----------------Barra Azul-----------------*/
+  .Checkout {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-image: url("../assets/imgs/imgBanner/Banner-Poke.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .top-bar-c {
+    margin-bottom: 5%;
+    background-color: #29CCBA;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+  
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .blueBar {
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+  }
+  .exit {
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  /*-----------------Estado del CheckOut-----------------*/
+  
+  .linea {
+    pointer-events: none;
+    position: relative;
+    top: 25px;
+    margin-left: 150px;
+    width: 800px; /* Define el ancho del cuadrado */
+    height: 2px; /* Define la altura del cuadrado */
+    background-color: #948989; /* Color de fondo del cuadrado */
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  .circulos {
+    margin-left: 130px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 340px; /* Espacio entre los círculos */
+  }
+  
+  .circuloRelleno,
+  .circulo {
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(248, 100, 108, 1);
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-color: rgba(255, 253, 253, 1);
+  }
+  
+  .circuloRelleno{
+    background-color: #F8646C;
+  }
+  
+  .nombreEstados {
+    display: flex;
+    font-size: 30px;
+  }
+  
+  .nombreEstados p {
+    margin-left: 30px;
+    padding: 0 4rem;
+    margin-right: 40px; /* Agrega espacio entre los elementos */
+    margin-bottom: 20px;
+  }
+  
+  .estadoActual{
+    margin-left: 100px;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .nombreEstados,
+  .estadoActual{
+    color:#15297C;
+  }
+  
+  /*-----------------Caja-----------------*/
+  .delivery {
+    height: 300px;
+    padding: 0px 0px 0px 30px;
+    border: 2px solid rgba(41, 204, 186, 1);
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+  }
+  
+  .horaEntrega {
+    position: relative;
+    font-size: 30px;
+    left: 250px;
+    top: -80px;
+  }
+  
+  .hora {
+    width: 275px;
+    height: 80px;
+    padding: 3px 72px 15px 66px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: rgba(41, 204, 186, 1);
+  }
+  
+  
+  /*-----------------Bóton de confirmar-----------------*/
+  .confirmar-boton {
+    position: relative;
+    top: 50px;
+    height: 82px;
+    padding: 17px 252px 25px 250px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    background-color: rgba(41, 204, 186, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s, transform 0.3s;
+    border: #29CCBA;
+    cursor: pointer;
+  }
+  
+  .confirmar-boton:hover {
+    background-color: rgba(31, 184, 166, 1);
+  }
+  
+  .confirmar-boton:active {
+    transform: translateY(2px); /* Efecto de presionar el botón */
+  }
+  
+  .delivery,
+  .confirmar-boton {
+    margin-left: 100px;
+    width: 800px;
+  }
+  
+  .confirmar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 40px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  .set-hora {
+    color: rgba(255, 255, 255, 1);
+    font-size: 60px;
+    line-height: 60px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+  }
+  
+  .imgDelivery {
+    height: 200px;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 1200px){
+    
+  
+    .delivery{
+      margin-left: 0px;
+      width: 100%;
+    } 
+  
+    .confirmar-boton {
+      width: 40%;
+      margin-left: 30%;
+    }
+    
+    .linea {
+      width: 500px;
+  
+    }
+    .circulos {
+      gap: 200px; 
+    }
+  
+    .nombreEstados {
+      font-size: 20px;
+    }
+    
+    .nombreEstados p {
+      margin-left: 50px;
+      padding: 0 4rem;
+      margin-right: -40px;
+      margin-bottom: 20px;
+    }
+  
+    .imgDelivery {
+      display: none; 
+    }
+  
+    .delivery {
+      padding: 0px 0px 0px 0px;
+      justify-content: center; 
+    }
+  
+      .horaEntrega {
+      position: relative;
+      font-size: 30px;
+      left: 150px;
+      top: -80px;
+    }
+  
+    .hora {
+      position: relative;
+      left: -100px;
+      width: 275px;
+      height: 80px;
+      padding: 4px 72px 15px 66px;
+      border: 1px solid rgba(255, 255, 255, 1);
+      border-radius: 20px;
+      box-sizing: border-box;
+      background-color: rgba(41, 204, 186, 1);
+    }
+  
+    
+  }
